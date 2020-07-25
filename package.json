@@ -2,36 +2,40 @@
   "name": "grunt-dwebp",
   "version": "0.1.2",
   "description": "Convert WebP images to PNG with grunt task.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/1000ch/grunt-dwebp.git"
-  },
-  "author": "1000ch",
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "bugs": {
-    "url": "https://github.com/1000ch/grunt-dwebp/issues"
-  },
-  "homepage": "https://github.com/1000ch/grunt-dwebp",
   "keywords": [
     "gruntplugin",
     "webp"
   ],
+  "homepage": "https://github.com/1000ch/grunt-dwebp",
+  "bugs": {
+    "url": "https://github.com/1000ch/grunt-dwebp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/1000ch/grunt-dwebp.git"
+  },
   "license": "MIT",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-nodeunit": "^0.4.1"
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "web": "https://github.com/1000ch"
+  },
+  "scripts": {
+    "test": "xo && grunt test"
+  },
+  "xo": {
+    "space": 2
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "chalk": "^0.5.1",
-    "dwebp-bin": "^0.1.6",
-    "mkdirp": "^0.5.0"
+    "dwebp-bin": "^1.0.0",
+    "mkdirp": "^1.0.4",
+    "replace-ext": "^2.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.2.1",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.1.0",
+    "xo": "^0.32.1"
   }
 }
