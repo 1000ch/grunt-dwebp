@@ -1,6 +1,4 @@
-# [grunt-dwebp](https://www.npmjs.org/package/grunt-dwebp)
-
-## About
+# grunt-dwebp
 
 Convert WebP images to PNG with grunt task.
 
@@ -45,4 +43,4 @@ module.exports = function (grunt) {
 
 ## License
 
-MIT
+[MIT](https://1000ch.mit-license.org) © [Shogo Sensui](https://github.com/1000ch)
