@@ -1,6 +1,6 @@
 {
   "name": "grunt-dwebp",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Convert WebP images to PNG with grunt task.",
   "keywords": [
     "gruntplugin",
