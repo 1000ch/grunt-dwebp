@@ -1,18 +1,16 @@
 'use strict';
-const {promisify} = require('util');
-const {execFile} = require('child_process');
 const path = require('path');
 const mkdirp = require('mkdirp');
 const replaceExt = require('replace-ext');
 const dwebp = require('dwebp-bin');
-const execFileP = promisify(execFile);
+const execa = require('execa');
 
 module.exports = grunt => {
   grunt.registerMultiTask('dwebp', 'Convert WebP images to PNG', function () {
     const done = this.async();
     const options = this.options({});
 
-    this.files.forEach(async file => {
+    this.files.forEach(file => {
       const src = file.src[0];
       const dest = replaceExt(file.dest, '.png');
 
@@ -25,8 +23,8 @@ module.exports = grunt => {
       });
 
       try {
-        await execFileP(dwebp, args);
-        grunt.verbose.writeln(`✔ ${src} was converted to ${dest}`);
+        execa.sync(dwebp, args);
+        grunt.log.writeln(`✔ ${src} was converted to ${dest}`);
       } catch (error) {
         grunt.warn(error);
       }
