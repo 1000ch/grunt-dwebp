@@ -5,7 +5,9 @@ module.exports = function (grunt) {
     },
     dwebp: {
       static: {
-        options: {},
+        options: {
+          nofancy: true
+        },
         files: {
           'tmp/test.png': 'test/fixtures/test-png.webp'
         }
