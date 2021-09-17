@@ -1,11 +1,6 @@
-# grunt-dwebp
+# grunt-dwebp ![GitHub Actions Status](https://github.com/1000ch/grunt-dwebp/workflows/test/badge.svg)
 
 Convert WebP images to PNG with grunt task.
-
-[![Build Status](https://travis-ci.org/1000ch/grunt-dwebp.svg?branch=master)](https://travis-ci.org/1000ch/grunt-dwebp)
-[![NPM version](https://badge.fury.io/js/grunt-dwebp.svg)](http://badge.fury.io/js/grunt-dwebp)
-[![Dependency Status](https://david-dm.org/1000ch/grunt-dwebp.svg)](https://david-dm.org/1000ch/grunt-dwebp)
-[![devDependency Status](https://david-dm.org/1000ch/grunt-dwebp/dev-status.svg)](https://david-dm.org/1000ch/grunt-dwebp#info=devDependencies)
 
 ## Install
 
