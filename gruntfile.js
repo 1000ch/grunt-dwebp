@@ -1,21 +1,21 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     clean: {
-      test: ['tmp']
+      test: ['tmp'],
     },
     dwebp: {
       static: {
         options: {
-          nofancy: true
+          nofancy: true,
         },
         files: {
-          'tmp/test.png': 'test/fixtures/test-png.webp'
-        }
-      }
+          'tmp/test.png': 'test/fixtures/test-png.webp',
+        },
+      },
     },
     nodeunit: {
-      tests: ['test/test.js']
-    }
+      tests: ['test/test.js'],
+    },
   });
 
   grunt.loadTasks('tasks');
@@ -27,6 +27,6 @@ module.exports = function (grunt) {
     'mkdir:tmp',
     'dwebp',
     'nodeunit',
-    'clean'
+    'clean',
   ]);
 };
