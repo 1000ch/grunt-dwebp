@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "dwebp-bin": "^1.0.0",
-    "execa": "^5.1.1",
+    "execa": "^6.0.0",
     "mkdirp": "^1.0.4",
     "replace-ext": "^2.0.0"
   },
